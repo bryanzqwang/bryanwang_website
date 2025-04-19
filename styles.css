@@ -1,0 +1,302 @@
+html, body {
+    height: 100%;
+  }
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+br {
+    line-height: 50px;
+}
+
+
+
+/* ---------- Generic ---------- */
+.main-content {
+    flex: 1; /* This makes it grow to fill available space */
+  }
+
+.portfolio-photo {
+    margin-bottom: 20px;
+}
+
+
+
+/* ---------- Nav Bar ---------- */
+nav {
+    position: sticky;
+    background: #88AB8E;
+    height: 80px;
+    width: 100%;
+}
+label.logo{
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+}
+
+nav ul {
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+
+}
+
+a.active,a:hover {
+    background: #6d8f72;
+    color: white;
+    transition: .5s;
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+.backdrop{
+    display: none;
+}
+
+@media (max-width: 991px) {
+    label.logo{
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+}
+@media (max-width: 901px) {
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #232624;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+        z-index: 1100; /* Bootstrap modals use 1050, so set it higher */
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    a:hover,a.active{
+        background: none;
+        color: #88AB8E;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+    #check:checked ~ .backdrop{
+        display: block;
+        position: absolute;
+        width: 300px;
+        border: 15px solid green;
+        padding: 50px;
+        margin: 20px;
+    }
+}
+@media (max-width: 575px) {
+    label.logo{
+        padding-left: 15px;
+    }
+}
+
+
+
+/* ---------- Footer ---------- */
+.footer-bg {
+    background-color: #88AB8E;
+}
+
+.footer-text {
+    color: white;
+}
+
+.socials {
+    padding-left: 25px; /* Adjust padding as needed */
+}
+
+/* ---------- Articles ---------- */
+.article-main-content {
+    line-height: 1.6;
+    max-width: 1000px;
+    flex: 1;
+}
+
+@media (min-width: 768px) {
+    .article-main-content {
+        padding-left: 150px;
+        padding-right: 150px;
+    }
+}
+
+.article-h1-font {
+    color: #333741;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.article-main-content p {
+    color: #333741;
+    margin: 1.5rem 0;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16.5px;
+    line-height: 26px;
+}
+
+
+
+/* ---------- Pages ---------- */
+
+/* home page */
+.cropped-image-home {
+    height: 540px;
+    max-width: 100%;
+    object-fit: cover;
+}
+
+
+
+/* About */
+.about-me-section {
+    margin-top: 50px;
+}
+.vision-section {
+    margin-top: 70px;
+}
+.currently-section {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    text-align: center;
+}
+.about-text {
+    font-size: 18px;
+    line-height: 37px;
+    word-spacing: 1px;
+    padding-top: 7px;
+    padding-right: 20px;
+}
+.quote-box {
+    background-color: #D2E3C8;
+    padding: 20px;
+    margin-top: 90px;
+}
+.quote-text {
+    color: #3A4D39;
+    font-size: 20px;
+    line-height: 34px;
+    word-spacing: 2px;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-top: 30px;
+}
+.grid-item img {
+    width: 363px; /* set your desired width */
+    height: 363px; /* set your desired height */
+    object-fit: cover; /* this will make the image cover the entire container, cropping if necessary */
+}
+.im-also-on-section {
+    margin-top: 50px;
+    text-align: center;
+}
+.im-also-on-title {
+    font-weight: bold;
+}
+.social-icons {
+    margin-top: 20px;
+}
+.social-icons a {
+    margin-right: 20px;
+}
+
+
+/* Articles */
+.cropped-image {
+    width: 100%;
+    max-height: 320px; /* set your desired height */
+    object-fit: cover; /* this will make the image cover the entire container, cropping if necessary */
+}
+.cropped-image-articles {
+    width: 100%; /* set your desired width */
+    max-height: 320px; /* set your desired height */
+    object-fit: cover; /* this will make the image cover the entire container, cropping if necessary */
+
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 300px; /* Adjust the container width as needed */
+    margin: auto; /* Center the container */
+    margin-top: 50px; /* Add space at the top */
+  }
+
+.full-graphic-width {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* portfolio */
+.intro-content {
+    margin-bottom: 5px;
+}
+
+
+
+/* Added the following rule to make the row a flex container with centered items */
+.nav-bar .row {
+    display: flex;
+    align-items: center; /* Vertically center child elements */
+}
+
+/* Header */
+.nav-bar .header-text {
+    margin-bottom: 0; /* Remove default margin */
+}
+
+/* Socials */
+.nav-bar .social-icons {
+    margin-top: 0; /* Remove default margin */
+}
+
+/* Social Icons */
+.nav-bar .social-icons a {
+    margin-right: 20px;
+}
