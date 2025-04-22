@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function() {
   // Array of photo URLs
   const photoUrls = [
     "/portfolio_photos/Graduation_Photos/ellie_sunny[wide].jpeg",
-    "/portfolio_photos/Graduation_Photos/ellie_sunny2.jpeg",
+    "https://bryanzwang.com/portfolio_photos/Graduation_Photos/ellie_sunny2.jpeg",
     "/portfolio_photos/Graduation_Photos/ellie_sunny3.jpeg",
     "/portfolio_photos/Graduation_Photos/ellie_sunny4.jpeg",
     "/portfolio_photos/Graduation_Photos/ellie_thesis.jpeg",
