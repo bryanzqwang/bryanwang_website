@@ -1,0 +1,8 @@
+---
+deployment:
+  tasks:
+    - export GIT_WORK_TREE=/home1/cpwgqjmy/public_html
+    - export GIT_DIR=/home1/cpwgqjmy/repositories/bryanwang_website/.git
+    - git reset --hard
+    - git clean -df
+    - git pull origin main
