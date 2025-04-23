@@ -3,7 +3,6 @@ document.addEventListener("DOMContentLoaded", function() {
   const photoUrls = [
     "https://img.bryanzwang.com/portfolio_photos/Graduation_Photos/ellie_sunny[wide].jpeg",
     "https://img.bryanzwang.com/portfolio_photos/Graduation_Photos/ellie_sunny2.jpeg",
-    "https://img.bryanzwang.com/portfolio_photos/Graduation_Photos/ellie_sunny3.jpeg",
     "https://img.bryanzwang.com/portfolio_photos/Graduation_Photos/ellie_sunny4.jpeg",
     "https://img.bryanzwang.com/portfolio_photos/Graduation_Photos/ellie_thesis.jpeg",
     "https://img.bryanzwang.com/portfolio_photos/Graduation_Photos/jonathan_back.jpeg",
